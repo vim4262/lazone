@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de Voyage en Bus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">VoyageBus</div>
+        <nav>
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Voyagez en Toute Sérénité</h1>
+            <p>Découvrez le Togo avec nos bus confortables et sécurisés.</p>
+        </section>
+        <section id="destinations">
+            <h2>Nos Destinations</h2>
+            <div class="destination-cards">
+                <div class="card">
+                    <img src="lome.jpg" alt="Lomé">
+                    <h3>Lomé</h3>
+                    <p>Explorez la capitale du Togo.</p>
+                </div>
+                <div class="card">
+                    <img src="kara.jpg" alt="Kara">
+                    <h3>Kara</h3>
+                    <p>Découvrez la beauté de Kara.</p>
+                </div>
+                <div class="card">
+                    <img src="sokode.jpg" alt="Sokodé">
+                    <h3>Sokodé</h3>
+                    <p>Visitez la ville historique de Sokodé.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Nos Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Confort</h3>
+                    <p>Bus modernes et confortables.</p>
+                </div>
+                <div class="card">
+                    <h3>Wi-Fi</h3>
+                    <p>Connexion Wi-Fi gratuite à bord.</p>
+                </div>
+                <div class="card">
+                    <h3>Restauration</h3>
+                    <p>Service de restauration disponible.</p>
+                </div>
+            </div>
+        </section>
+        <section id="reservation">
+            <h2>Réservez Votre Voyage</h2>
+            <form id="reservation-form">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="lome">Lomé</option>
+                    <option value="kara">Kara</option>
+                    <option value="sokode">Sokodé</option>
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>Contactez-nous pour plus d'informations.</p>
+        <p>Email: contact@voyagebus.com | Téléphone: +228 1234 5678</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
